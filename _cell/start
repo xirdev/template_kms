@@ -1,0 +1,7 @@
+#!/bin/bash
+
+git clone https://github.com/Kurento/kurento-tutorial-node.git
+cd kurento-tutorial-node/kurento-one2many-call
+git checkout 6.6.0
+npm install
+npm start
