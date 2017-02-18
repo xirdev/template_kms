@@ -1,7 +1,11 @@
 #!/bin/bash
 
+cd /cells/mykms
+
 git clone https://github.com/Kurento/kurento-tutorial-node.git
-cd kurento-tutorial-node/kurento-one2many-call
+#cd kurento-tutorial-node/kurento-one2many-call
+cd kurento-tutorial-node/kurento-hello-world
+
 git checkout 6.6.0
 npm install
-npm start
+npm start -- --ws_uri=ws://172.17.0.6:8888/kurento
