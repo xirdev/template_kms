@@ -4,8 +4,12 @@ cd /cells/mykms
 
 git clone https://github.com/Kurento/kurento-tutorial-node.git
 #cd kurento-tutorial-node/kurento-one2many-call
-cd kurento-tutorial-node/kurento-hello-world
+#cd kurento-tutorial-node/kurento-hello-world
+cd kurento-tutorial-node/kurento-magic-mirror
 
 git checkout 6.6.0
 npm install
-npm start -- --ws_uri=ws://172.17.0.6:8888/kurento
+
+echo "Starting, looking for port ${KMS_PORT_8888_TCP_ADDR}"
+
+npm start -- --ws_uri=ws://${KMS_PORT_8888_TCP_ADDR}:8888/kurento
