@@ -1,11 +1,10 @@
 #!/bin/bash
 
-cd /cells/mykms
 
 git clone https://github.com/Kurento/kurento-tutorial-node.git
 #cd kurento-tutorial-node/kurento-one2many-call
-#cd kurento-tutorial-node/kurento-hello-world
-cd kurento-tutorial-node/kurento-magic-mirror
+cd kurento-tutorial-node/kurento-hello-world
+#cd kurento-tutorial-node/kurento-magic-mirror
 
 git checkout 6.6.0
 npm install
