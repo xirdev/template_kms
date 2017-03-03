@@ -1,5 +1,5 @@
 {
     "run": "-p 8443:8443 --link kms",
-    "stem": "xirsys/xirsys",
-    "with": ["xirsys/kms"]
+    "stem": "xirsys/xirsys:1.0",
+    "with": ["xirsys/kms:1.0"]
 }
